@@ -9,6 +9,14 @@ body {
     background: #f2f2f2;
 }
 
+.celeste {
+    color: skyblue;
+}
+
+.blue {
+    color: blue;
+}
+
 nav {
     background: #1b1b1b;
     z-index: 100;
@@ -19,6 +27,7 @@ nav:after {
     clear: both;
     display: table;
     z-index: 100;
+    max-width: 100%;
 }
 
 nav .logo {
@@ -86,6 +95,7 @@ nav ul li:hover>ul {
     top: 70px;
     opacity: 1;
     visibility: visible;
+    z-index: 100;
 }
 
 nav ul ul li {
@@ -96,16 +106,19 @@ nav ul ul li {
     float: none;
     display: list-item;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    z-index: 100;
 }
 
 nav ul ul li a {
     line-height: 50px;
+    z-index: 100;
 }
 
 nav ul ul ul li {
     position: relative;
     top: -70px;
     left: 150px;
+    z-index: 100;
 }
 
 
@@ -165,6 +178,7 @@ input {
         padding: 0 20px;
         line-height: 70px;
         cursor: pointer;
+        z-index: 100;
     }
     .show:hover {
         color: cyan;
@@ -316,5 +330,247 @@ header .overlay {
     }
     .inner-container {
         padding: 60px;
+    }
+}
+
+.animated-text {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 40px;
+    height: 60px;
+    overflow: hidden;
+    z-index: 90;
+}
+
+.line {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.line:first-child {
+    animation: anim 5s infinite;
+}
+
+@keyframes anim {
+    0% {
+        margin-top: 0;
+    }
+    16% {
+        margin-top: -60px;
+    }
+    33% {
+        margin-top: -120px;
+    }
+    50% {
+        margin-top: -180px;
+    }
+    66% {
+        margin-top: -120px;
+    }
+    82% {
+        margin-top: -60px;
+    }
+    100% {
+        margin-top: 0;
+    }
+}
+
+.paragon {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    font-weight: 900;
+    font-size: 80px;
+    color: #fff;
+    max-width: auto;
+    min-width: auto;
+}
+
+
+/*Footer */
+
+footer {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    background: #111;
+    color: #fff;
+}
+
+.main-content {
+    display: flex;
+}
+
+.main-content .box {
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+
+.box h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.box .content {
+    margin: 20px 0 0 0;
+    position: relative;
+}
+
+.box .content:before {
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    background: #1a1a1a;
+}
+
+.box .content:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background: cyan;
+    top: -10px;
+}
+
+.left .content p {
+    text-align: justify;
+}
+
+.left .content .social {
+    margin: 20px 0 0 0;
+}
+
+.left .content .social a {
+    padding: 0 2px;
+}
+
+.left .content .social a span {
+    height: 40px;
+    width: 40px;
+    background: #1a1a1a;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.left .content .social a span:hover {
+    background: cyan;
+}
+
+.center .content .fas {
+    font-size: 1.4375rem;
+    background: #1a1a1a;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.center .content .fas:hover {
+    background: cyan;
+}
+
+.center .content .text {
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.center .content .phone {
+    margin: 15px 0;
+}
+
+.right form .text {
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color: #f1f1f1;
+}
+
+.right form .msg {
+    margin-top: 10px;
+}
+
+.right form input,
+.right form .msgForm {
+    width: 100%;
+    font-size: 1.0625rem;
+    background: #151515;
+    padding-left: 10px;
+    border: 1px solid #222222;
+}
+
+.right form input:focus,
+.right form .msgForm:focus {
+    outline-color: #3498db;
+}
+
+.right form input {
+    height: 35px;
+}
+
+.right form .btn {
+    margin-top: 10px;
+}
+
+.right form .btn button {
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: cyan;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.right form .btn button:hover {
+    background: cyan;
+    color: #fff;
+}
+
+.bottom center {
+    padding: 5px;
+    font-size: 0.9375rem;
+    background: #151515;
+}
+
+.bottom center span {
+    color: #fff;
+}
+
+.bottom center a {
+    color: cyan;
+    text-decoration: none;
+}
+
+.bottom center a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+    footer {
+        position: relative;
+        bottom: 0px;
+    }
+    .main-content {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .main-content .box {
+        margin: 5px 0;
     }
 }
