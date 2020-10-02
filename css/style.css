@@ -723,10 +723,10 @@ footer {
     .paragon {
         justify-content: right;
         width: 10%;
-        padding-right: 1150px;
-        padding-left: 335px;
-        font-size: 30px;
-        padding-block-start: 180px;
+        padding-right: 1100px;
+        padding-left: 355px;
+        font-size: 10px;
+        padding-block-start: 170px;
     }
     .animated-text {
         color: #fff;
@@ -738,7 +738,7 @@ footer {
         height: 60px;
         overflow: hidden;
         z-index: 90;
-        padding-top: 10px;
+        padding-top: 30px;
     }
     nav .logo {
         float: left;
