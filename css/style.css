@@ -577,7 +577,7 @@ footer {
 
 .service-section {
     margin-top: 5px;
-    background: url(/images/bg.jpg);
+    background: #000;
     background-size: cover;
     padding: 60px 0;
 }
@@ -666,5 +666,31 @@ footer {
 @media screen and (max-width:480px) {
     .service-box {
         max-width: 100%;
+    }
+}
+
+.cliens {
+    padding: 12px 0;
+    text-align: center;
+}
+
+.cliens img {
+    max-width: 45%;
+    transition: all 0.4s ease-in-out;
+    display: inline-block;
+    padding: 15px 0;
+    -webkit-filter: grayscale(100);
+    filter: grayscale(100);
+}
+
+.cliens img:hover {
+    -webkit-filter: none;
+    filter: none;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .cliens img {
+        max-width: 40%;
     }
 }
