@@ -723,9 +723,9 @@ footer {
     .paragon {
         justify-content: right;
         width: 10%;
-        padding-right: 1100px;
-        padding-left: 355px;
-        font-size: 10px;
+        padding-right: 100px;
+        padding-left: 100px;
+        font-size: 20px;
         padding-block-start: 170px;
     }
     .animated-text {
@@ -812,15 +812,15 @@ footer {
     }
 }
 
-@media screen and (max-width:320px) {
+.logo img {
+    width: 60%;
+    height: 50%;
+}
+
+@media screen and (max-width:375px) {
     .paragon {
-        justify-content: right;
-        width: 10%;
         padding-right: 1150px;
-        padding-left: 290px;
-        font-size: 25px;
-        padding-block-start: 180px;
-        padding-bottom: 10px;
+        padding-left: 344px;
     }
     .animated-text {
         color: #fff;
@@ -833,12 +833,14 @@ footer {
         overflow: hidden;
         z-index: 90;
     }
-    nav .logo {
-        float: left;
-        color: white;
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 70px;
-        padding-left: 30px;
+}
+
+@media screen and (max-width:375px) {
+    .paragon {
+        padding-left: 270px;
+        font-size: 22px;
+    }
+    .animated-text {
+        height: 55px;
     }
 }
