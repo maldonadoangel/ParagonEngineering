@@ -382,13 +382,15 @@ header .overlay {
 
 .paragon {
     display: flex;
+    margin-left: 300px;
+    margin-top: -150px;
+    width: 500px;
+    height: 500px;
     justify-content: center;
     padding-top: 100px;
     font-weight: 900;
     font-size: 80px;
     color: #fff;
-    max-width: auto;
-    min-width: auto;
 }
 
 
@@ -710,12 +712,31 @@ footer {
 
 @media screen and (max-width:900px) {
     .paragon {
+        display: flex;
+        margin-left: 100px;
+        margin-top: -150px;
+        width: 500px;
+        height: 500px;
         justify-content: center;
-        width: 30%;
-        height: auto;
-        padding-left: 350px;
-        padding-top: 250px;
-        font-size: 45px;
+        padding-top: 100px;
+        font-weight: 900;
+        font-size: 80px;
+        color: #fff;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .paragon {
+        display: flex;
+        margin-left: 18px;
+        margin-top: -150px;
+        width: 500px;
+        height: 500px;
+        justify-content: center;
+        padding-top: 100px;
+        font-weight: 900;
+        font-size: 80px;
+        color: #fff;
     }
 }
 
